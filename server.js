@@ -11,6 +11,7 @@ const Pizza = require('./models/pizzaModel')
 // parse application/json
 //app.use(bodyParser.json())
 app.use(express.json());
+const path = require('path')
 const pizzasRoute = require('./routes/pizzasRoute')
 const userRoute = require('./routes/userRoute')
 const ordersRoute = require('./routes/ordersRoute')
