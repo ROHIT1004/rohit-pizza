@@ -26,12 +26,12 @@ if(process.env.NODE_ENV === 'production'){
 
   app.get('*' , (req ,res) =>{
 
-    res.sendFile(path.resolve(__dirname , '/client/build/intex.html'))
+    res.sendFile(path.resolve(__dirname , 'client/build/intex.html'))
 
   })
 }
 app.get("/", (req,res)=> {
-  res.send("working fine !@");
+  res.send("working  fine !@");
 })
 
 //app.use(express.urlencoded({extended: true}));
@@ -56,10 +56,10 @@ mongoose.connect("mongodb+srv://rajat:rajatpw@cluster0.1bdwh.mongodb.net/mern-pi
 			useNewUrlParser: true,
 			useCreateIndex: true,
 		})
-        .then(() => console.log("Mongodb is connected"))
-        .catch(err => console.log(err+"error Mongodb connections"));
+        .then(() => console.log("Mongodb is  connected"))
+        .catch(err => console.log(err+"errors Mongodb connections"));
 
 
 const port = process.env.PORT || 5000;
   
-app.listen(port, () => console.log('Server started on port '+port)); 
+app.listen(port, () => console.log(`Server started on port ${port}`)); 
