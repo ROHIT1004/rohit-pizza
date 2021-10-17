@@ -22,6 +22,7 @@ export default function Registerscreen() {
             }
             console.log(user);
             dispatch(registerUser(user))
+            alert('Register successfully and go for login')
         }
     }
 

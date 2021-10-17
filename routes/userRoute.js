@@ -46,7 +46,7 @@ router.get("/getallusers", async(req,res) => {
             res.send(users)
     } catch (error) {
         console.log("somthing get users")
-        return res.status(400).json({message : "somthing gt users"+error});
+        return res.status(400).json({message : "something get users"+error});
     }
 })
 
